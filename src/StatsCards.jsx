@@ -3,7 +3,7 @@ import "./StatsCards.css";
 
 import inception from "./assets/Sinceinception.jpeg";
 import reach from "./assets/Reach.jpeg";
-import pillars from "./assets/GroupPillars.jpeg";
+import pillars from "./assets/Grouppillars.jpeg";
 import network from "./assets/Network.jpeg";
 
 function StatsCards() {
