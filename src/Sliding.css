@@ -1,0 +1,33 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #111; /* Dark theme background */
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}
+
+.marquee-wrapper {
+  display: flex;
+  width: max-content;
+  animation: slide 15s linear infinite;
+}
+
+.item {
+  color: #888; /* Text color */
+  padding: 0 40px;
+  white-space: nowrap;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.diamond {
+  color: #f4c430; /* Gold color for diamond */
+  font-size: 12px;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

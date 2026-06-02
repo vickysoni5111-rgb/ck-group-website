@@ -1,0 +1,180 @@
+.countries-section {
+  background: #050505;
+  padding: 80px 5%;
+}
+
+.countries-card {
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding: 50px 30px;
+
+  text-align: center;
+
+  border: 2px solid rgba(244,196,48,0.2);
+
+  border-radius: 25px;
+
+  background: linear-gradient(
+    180deg,
+    #0b0b0b,
+    #050505
+  );
+
+  transition: 0.4s ease;
+}
+
+.countries-card:hover {
+  border-color: #f4c430;
+
+  box-shadow:
+    0 0 25px rgba(244,196,48,0.15);
+}
+
+.countries-tag {
+  color: #f4c430;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.countries-card h2 {
+  color: white;
+
+  font-size: 2.5rem;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.countries-card p {
+  color: rgba(255,255,255,0.75);
+
+  margin-bottom: 40px;
+
+  font-size: 1rem;
+}
+
+.flags-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+.flags-container img {
+  width: 90px;
+
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #f4c430;
+
+  transition: all 0.4s ease;
+
+  cursor: pointer;
+}
+
+.flags-container img:hover {
+  transform: scale(1.1);
+
+  box-shadow:
+    0 0 20px rgba(244,196,48,0.4);
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+  .countries-card h2 {
+    font-size: 2rem;
+  }
+
+  .flags-container img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .countries-card {
+    padding: 40px 20px;
+  }
+
+  .countries-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .flags-container {
+    gap: 15px;
+  }
+
+  .flags-container img {
+    width: 65px;
+    height: 65px;
+  }
+}
+.flags-container img {
+  width: 90px;
+  height: 65px;
+
+  object-fit: cover;
+
+  border-radius: 10px; /* Square with soft corners */
+
+  border: 2px solid #f4c430;
+
+  transition: all 0.4s ease;
+
+  cursor: pointer;
+}
+
+.flags-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.flag-item {
+  text-align: center;
+}
+
+.flag-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+
+  border-radius: 15px; /* cube style */
+
+  border: 2px solid #f4c430;
+
+  transition: 0.3s ease;
+}
+
+.flag-item img:hover {
+  box-shadow: 0 0 15px rgba(244, 196, 48, 0.5);
+}
+
+.flag-item h6 {
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
